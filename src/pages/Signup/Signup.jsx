@@ -1,4 +1,4 @@
-import reactLogo from "@/assets/react.svg";
+import alterpaylogo from "@/assets/alterpay.jpeg";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import { registerUserService } from "@/service/userService";
@@ -30,12 +30,12 @@ const Signup = () => {
 
   return (
     <div className="max-w-md mx-auto mt-16 p-10 bg-white rounded-xl shadow-xl border border-gray-200">
-      <h2 className="text-4xl font-bold mb-8 text-center text-gray-800">
+      <h2 className="text-4xl font-bold mb-8 text-center text-gray-500">
         <span className="inline-flex items-center justify-center gap-2">
           <img
-            src={reactLogo}
-            alt="React Logo"
-            className="w-10 h-10 animate-spin"
+            src={alterpaylogo}
+            alt="Alterpay Logo"
+            className="w-25 h-10"
           />
           Crear Cuenta
         </span>
@@ -105,9 +105,10 @@ const Signup = () => {
        transition ease-in-out duration-150
        `}
           >
-            <option value="">Choose...</option>
-            <option value="M">Male</option>
-            <option value="F">Female</option>
+            <option value="">Elige...</option>
+            <option value="M">Hombre</option>
+            <option value="F">Mujer</option>  
+            <option value="O">binario</option>
           </select>
           {errors.gender && (
             <p className="text-sm text-red-600">{errors.gender.message}</p>

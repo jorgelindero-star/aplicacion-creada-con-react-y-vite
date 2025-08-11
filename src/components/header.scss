@@ -3,7 +3,7 @@
 // asigandas en cada etiqueta
 // Definir variables para un diseño más minimalista
 $menu-color: #333333; // Color de texto más oscuro para un look más profesional
-$hover-color: #ff6600; // Color para el hover, sigue siendo un acento vibrante
+$hover-color: #67b454; // Color para el hover, sigue siendo un acento vibrante
 $font-family: 'Roboto', San Serif, Arial; // Mantener la familia de fuentes limpia y moderna
 $header-bg-color: #ffffff; // Fondo blanco para un diseño minimalista
 $border-color: #e0e0e0; // Color gris suave para bordes o líneas sutiles
@@ -34,9 +34,7 @@ $active-border-color: $hover-color; // Color para el borde del enlace activo
 
     &__logo {
         @include header-link;
-        font-size: 1.6rem; // Tamaño de fuente moderado
-        font-weight: bold; // Negrita para el logo
-        color: $menu-color; // Color oscuro para el logo
+        width: 100px;     
     }
 
     // Lista de navegación

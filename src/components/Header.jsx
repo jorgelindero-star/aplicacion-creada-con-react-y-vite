@@ -1,7 +1,9 @@
+import alterpaylogo from "@/assets/alterpay.jpeg";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useAuthContext } from "@/hook/useAuthContext";
 import { toast } from "react-toastify";
 import "./header.scss";
+
 
 const Header = () => {
   // del contexto vamos a consumir
@@ -27,7 +29,7 @@ const Header = () => {
       <nav className="header bg-gray-800 p-4 shadow-md">
         {/*  bloque__elemento */}
         <NavLink className="header__logo text-white text-2xl font-bold" to="/">
-          Alterpay
+          <img src={alterpaylogo} alt="logo alterpay" />
         </NavLink>
         <ul className="header__nav-list flex space-x-8">
           <li className="header__list-item">

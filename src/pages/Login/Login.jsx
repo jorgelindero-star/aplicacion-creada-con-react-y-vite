@@ -1,4 +1,4 @@
-import reactLogo from "@/assets/react.svg";
+import alterpayLogo from "@/assets/alterpay.jpeg";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import { loginUserService } from "@/service/userService";
@@ -34,12 +34,12 @@ const Login = () => {
 
   return (
     <div className="max-w-lg mx-auto mt-16 p-10 bg-white rounded-xl shadow-2xl border border-gray-100">
-      <h2 className="text-4xl font-bold mb-8 text-center text-gray-800">
+      <h2 className="text-4xl font-bold mb-8 text-center text-gray-500">
         <span className="inline-flex items-center justify-center gap-2">
           <img
-            src={reactLogo}
-            alt="React Logo"
-            className="w-10 h-10 animate-spin"
+            src={alterpayLogo}
+            alt="AlterPay Logo"
+            className="w-25 h-10 "
           />
           Iniciar Sesión
         </span>
